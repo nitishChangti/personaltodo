@@ -9,7 +9,8 @@ app.use(
     cors({
         origin:[
             'http://localhost:5173',
-            config.get("CORS_ORIGIN")
+            config.get("CORS_ORIGIN"),
+            "https://mytodo-nine-omega.vercel.app"
         ],
         methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
         allowedHeaders:['Content-Type', 'Authorization'],
