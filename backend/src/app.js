@@ -7,7 +7,8 @@ import taskRoutes from './routes/task.routes.js';
 app.use(
     cors({
         origin:[
-            'http://localhost:5173'
+            'http://localhost:5173',
+            config.get("CORS_ORIGIN")
         ],
         methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
         allowedHeaders:['Content-Type', 'Authorization'],
